@@ -50,6 +50,7 @@
             font-size: 18px;
             margin-top: 20px;
             text-align: center;
+            animation: fadeInUp 2s ease; /* Add a fade-in animation */
         }
 
         /* Footer styles */
@@ -58,6 +59,18 @@
             padding: 10px;
             background-color: #333; /* Dark background color */
             color: #fff; /* White text color */
+        }
+
+        /* Keyframes for fadeInUp animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
                 /* Styles for video container */
         .video-container {
@@ -80,19 +93,20 @@
     </style>
 </head>
 <body>
+
+
     <header>
         <h1>PotatoInu - The Memecoin of the Future</h1>
     </header>
     <div class="container">
         <img class="coin-image" src="potatoinu.png" alt="PotatoInu Coin">
-        <br><br><br>
     </div>
     <br>
-                   <p class="description">
-            🥔 Welcome to PotatoInu - Where you just upload funny videos, images, texts, and earn potato coins! 🚀<br>
-            Join the spud-tacular revolution today and let the laughter roll in! 😂💰
-        </p>
-    
+    <p class="description">
+        🥔 Welcome to PotatoInu - Where you just upload funny videos, images, texts, and earn potato coins! 🚀<br>
+        Join the spud-tacular revolution today and let the laughter roll in! 😂💰
+    </p>
+
     <footer>
         &copy; 2023 PotatoInu
     </footer>
