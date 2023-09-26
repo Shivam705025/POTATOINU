@@ -95,15 +95,36 @@
             width: 100%;
             height: 700px; /* Adjust the height as needed */
         }
+            .coin-image-container {
+        background-color: #800000; /* Maroon color */
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    }
+
+    /* Glittering effect for the image */
+    .glitter {
+        animation: glitter 2s infinite alternate;
+    }
+
+    /* Keyframes for glittering effect */
+    @keyframes glitter {
+        0% {
+            filter: brightness(1) saturate(1);
+        }
+        100% {
+            filter: brightness(1.2) saturate(1.5);
+        }
+    }
     </style>
 </head>
 <body>
     <header>
         <h1>PotatoInu - The Memecoin of the Future</h1>
     </header>
-    <div class="container">
-        <img class="coin-image" src="potatoinu.png" alt="PotatoInu Coin">
-    </div>
+<div class="coin-image-container">
+    <img class="coin-image glitter" src="potatoinu.png" alt="PotatoInu Coin">
+</div>
     <br>
 
     <!-- Uniswap container with iFrame -->
